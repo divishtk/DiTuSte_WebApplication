@@ -73,7 +73,7 @@
                                     <a class="nav-link" href="#">Notification <i class="fas fa-bell"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Logout <i class="fas fa-sign-out-alt"></i></a>
+                                    <a class="nav-link" href="/DiTuSte_Cryto/logoutSerlvet">Logout <i class="fas fa-sign-out-alt"></i></a>
                                 </li>
                             </ul>
                         </div>
