@@ -50,7 +50,7 @@ public class redirectController extends HttpServlet {
         }
         in.close();
         con.disconnect();
-//        System.out.println("Content:"+content);
+//        System.out.println("Content:"+content);Steven
         return content.toString();
     }
     
