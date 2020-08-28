@@ -143,7 +143,6 @@
                     $('a[aria-expanded=true]').attr('aria-expanded', 'false');
                 });
 
-
                 $.ajax({
                     url: "/DiTuSte_Cryto/redirectController?action=newsAPI",
                     method: "GET",
