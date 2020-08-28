@@ -32,11 +32,11 @@
                             <div class="form-group row">
                                 <div class="col">
                                     <label for="inputName" class="col-form-label">Name:</label>
-                                    <input type="text" class="form-control" id="inputName" name="name" placeholder="First | Middle | Last Name" value="Steven">
+                                    <input type="text" class="form-control" id="inputName" name="name" placeholder="First | Middle | Last Name" value="Steven" required>
                                 </div>
                                 <div class="col">
                                     <label for="inputEmail" class="col-sm-3 col-form-label">Email:</label>
-                                    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="e.g. johndoe@email.com" value="steve@email.com">
+                                    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="e.g. johndoe@email.com" value="steve@email.com" required>
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -67,7 +67,7 @@
                             <div class="form-group row">
                                 <div class="col-5">
                                     <label for="inputEmail3" class="col-form-label">User Role:</label>
-                                    <select class="form-control" name="role">
+                                    <select class="form-control" name="role" required>
                                         <option value="">Select..</option>
                                         <option value="EndUser" selected>Programmer</option>
                                         <option value="LabUser">Contributor</option>
@@ -87,7 +87,7 @@
                             <div class="form-group row">
                                 <div class="col">
                                     <label for="inputPwd" class="col-form-label">Password:</label>
-                                    <input type="password" class="form-control" id="inputPwd" name="pass" value="qwerty123">
+                                    <input type="password" class="form-control" id="inputPwd" name="pass" value="qwerty123" required>
                                 </div>
                                 <div class="col">
                                     <label for="inputCfPwd" class="col-form-label">Confirm Password:</label>

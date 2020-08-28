@@ -8,6 +8,10 @@
         <servlet-name>logoutSerlvet</servlet-name>
         <servlet-class>logoutSerlvet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>redirectController</servlet-name>
+        <servlet-class>redirectController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/loginServlet</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>logoutSerlvet</servlet-name>
         <url-pattern>/logoutSerlvet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>redirectController</servlet-name>
+        <url-pattern>/redirectController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
