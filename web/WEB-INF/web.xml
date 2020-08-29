@@ -2,15 +2,15 @@
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
         <servlet-name>loginServlet</servlet-name>
-        <servlet-class>loginServlet</servlet-class>
+        <servlet-class>com.controllers.loginServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>logoutSerlvet</servlet-name>
-        <servlet-class>logoutSerlvet</servlet-class>
+        <servlet-class>com.controllers.logoutSerlvet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>redirectController</servlet-name>
-        <servlet-class>redirectController</servlet-class>
+        <servlet-class>com.controllers.redirectController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
