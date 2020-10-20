@@ -19,7 +19,7 @@
     <body class="text-center">
         <div class="row justify-content-center">
             <div class="col-md-5 col-sm-7 col-lg-4">
-                <form action="/DiTuSte_Cryto/loginServlet" method="GET" class="form-signin border border-primary rounded shadow p-5 mb-3">
+                <form action="${pageContext.request.contextPath}/loginServlet" method="GET" class="form-signin border border-primary rounded shadow p-5 mb-3">
                     <img class="mb-4" src="https://cdn4.iconfinder.com/data/icons/flat-design-security-set-one/24/shield-gray-contour-512.png" alt="" width="72" height="72">
                     <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
                     <label for="inputEmail" class="sr-only">User Name</label>

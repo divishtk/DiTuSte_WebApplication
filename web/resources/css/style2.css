@@ -8,12 +8,18 @@ body {
     background: #fafafa;
 }
 
-p {
+p, ul:not(.list-unstyled):not(.list-group)>li {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
     color: #999;
+}
+p:not(.h4):not(.h2){
+    text-indent: 30px;
+}
+p.h4{
+    margin-top: 35px;
 }
 
 a,
@@ -182,4 +188,12 @@ a.article:hover {
     #sidebarCollapse span {
         display: none;
     }
+}
+
+.mouseOnHover{
+    cursor: pointer;
+}
+.custom-article-heading{
+    padding: 8px;
+    background-color: #e7e9eb;
 }
