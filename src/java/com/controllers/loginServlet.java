@@ -47,7 +47,8 @@ public class loginServlet extends HttpServlet
    
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+            throws ServletException, IOException
+    {
         System.out.println("GET login servlet");
         
         HttpSession hs = null;
@@ -123,7 +124,8 @@ public class loginServlet extends HttpServlet
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+            throws ServletException, IOException 
+    {
         System.out.println("POST login servlet");
         
         int userId = 0;
@@ -209,7 +211,7 @@ public class loginServlet extends HttpServlet
            
            
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println(e.getMessage()); 
         }
     }
 

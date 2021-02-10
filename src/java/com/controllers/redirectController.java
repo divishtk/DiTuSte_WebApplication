@@ -57,7 +57,8 @@ public class redirectController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+            throws ServletException, IOException 
+    {
         String action = request.getParameter("action");
         System.out.println("GET redirectController " + action);
         switch(action){

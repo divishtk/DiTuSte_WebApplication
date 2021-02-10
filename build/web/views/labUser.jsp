@@ -16,6 +16,14 @@
         <title>Home</title>
 
         <%@ include file="/WEB-INF/jspf/linkFiles.jspf" %>
+          <style>
+              .tab
+              {
+                  margin:0 100px;
+                  
+              }
+              </style>
+
     </head>
     <body
         
@@ -54,10 +62,10 @@
 
                       while(rs.next())
                       {
-                       t=rs.getString(1);
-                       d=rs.getString("description");
-                       r=rs.getString(8);
-                       top=rs.getString(9);
+                      // t=rs.getString(1);
+                       //d=rs.getString("description");
+                       //r=rs.getString(8);
+                       //top=rs.getString(9);
                        
                        
                        
@@ -178,11 +186,90 @@
                             out.println(top);
                             %>-->
                             
-                          <h5> Title: <% out.println(t);%></h5>
+                  <!--       <h5> Title: <% out.println(t);%></h5>
                             <h5>  Description: <% out.println(d);%></h5>
                             <h5> Ratings:<% out.println(r);%></h5>
-                             <h5> Topic:Algorithm <% out.println(top);%></h5>
+                             <h5> Topic:Algorithm <% out.println(top);%></h5>-->
+                             
+                             
+                             
                             
+                             
+                             
+                             
+                             
+                            
+                             
+                             <div class="tab">
+                                 <table class="table table-bordered">
+                                     <thead>
+                                         <tr>
+                                             <th> Lab Id</th>
+                                             <th>Title</th>
+                                             <th>Description</th>
+                                             <th>Data File</th>
+                                             <th>Instruction File</th> 
+                                                 <th>Topics</th>
+                                             <th> Ratings</th>
+                                             <th>Update</th>
+                                             
+
+                                         </tr>
+                                     </thead>
+                                     <tbody>
+                                          <%
+                              
+                       Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection dbConn = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/DeTuSte?useSSL=false&allowPublicKeyRetrieval=true", "root", "ilovemaster");
+            dbConn.setAutoCommit(false);
+          
+            Statement st=dbConn.createStatement();
+           // st.execute("select userName, userPassword, userEmailId, userType from Users2 where userName=name and userPassword=pass");
+            
+            ResultSet rs=st.executeQuery("select lab_id,title, description, data_file, instruction_file,uploaded,approved,last_modified,ratings,topic from minitools_storage where userId='"+uid + "'" );
+                             
+
+
+                        while(rs.next())
+                        {
+                             // t=rs.getString(1);
+                       //d=rs.getString("description");
+                       //r=rs.getString(8);
+                       //top=rs.getString(9);
+                        
+                            
+                        
+
+
+                             %>
+                                         <tr>
+                                             <td><%=rs.getString("lab_id")%></td>
+                                             <td><%=rs.getString(2)%></td>
+                                                <td><%=rs.getString(3)%></td>
+                                                   <td>BLOB</td> 
+                                                   <td>BLOB</td>
+                                                      <td>Algorithm <%=rs.getString(9)%></td>
+                                                         <td><%=rs.getString(10)%></td>
+                                                         <td><button type="submit" href="#" class="btn btn-primary" name="">Update</button></td>
+                                        
+                                                         
+                                         
+
+
+                                         </tr>
+                                         <%
+                                         }
+                                         %>
+                                       
+
+                                     </tbody>
+                                 </table>
+                             </div>
+                             
+                             
+                             
+                             
                             
                             
                         </div>

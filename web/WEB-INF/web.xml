@@ -55,8 +55,8 @@
     <servlet-mapping>
         <servlet-name>labUser</servlet-name>
         <url-pattern>/labUser</url-pattern>
-        </servlet-mapping>
-        <servlet-mapping>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>articleAddServlet</servlet-name>
         <url-pattern>/articleAddServlet</url-pattern>
     </servlet-mapping>
