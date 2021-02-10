@@ -1,2 +1,2 @@
 # DiTuSte_WebApp
-A Java Web Application.
+A Web Application using Jquery, MySql and Java.
